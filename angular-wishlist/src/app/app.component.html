@@ -326,7 +326,17 @@
 </div>
 
 <div class="content" role="main">
-  <app-saludador></app-saludador>
+
+  <div class="container content">
+    <div class="row">
+      <h1>
+        {{title}}
+      </h1>
+    </div>
+    <app-destino-viaje>
+      
+    </app-destino-viaje>
+  </div>
   <!-- Highlight Card -->
   <div class="card highlight-card card-small">
 
@@ -481,3 +491,4 @@
 <!-- * * * * * * * * * * End of Placeholder * * * * * * * * * * * -->
 <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
 
+<router-outlet></router-outlet>
